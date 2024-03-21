@@ -1,0 +1,19 @@
+﻿@{
+    Layout = null;
+    @model LoginViewModel
+}
+<h1>Login Page</h1>
+
+<form asp-controller="Authentication" asp-action="LoginCheck" method="post">
+    <div>
+        <label for="txtusername">Username</label>
+        <input type="text" id="txtusername" name="Username" />
+    </div>
+
+    <div>
+        <label for="txtpassword">Password</label>
+        <input type="password" id="txtpassword" name="Password" />
+    </div>
+
+    <button type="submit">Login</button>
+</form>
